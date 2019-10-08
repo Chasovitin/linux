@@ -1,0 +1,198 @@
+{\rtf1\ansi\ansicpg1251\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red47\green180\blue29;\red0\green0\blue0;\red64\green11\blue217;
+}
+{\*\expandedcolortbl;;\cssrgb\c20238\c73898\c14947;\csgray\c0;\cssrgb\c32308\c18668\c88227;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b\fs22 \cf2 \CocoaLigature0 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ mv second.py ./second/\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ ls second/\
+second.py\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ ls\
+
+\f0\b \cf4 first
+\f1\b0 \cf3   first.py  
+\f0\b \cf4 for_copy
+\f1\b0 \cf3   
+\f0\b \cf4 second
+\f1\b0 \cf3   test2.txt  test3.txt  test4.txt  text1.txt\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ tree\
+
+\f0\b \cf4 .
+\f1\b0 \cf3 \
+\uc0\u9500 \u9472 \u9472  
+\f0\b \cf4 first
+\f1\b0 \cf3 \
+\uc0\u9474 \'a0\'a0 \u9492 \u9472 \u9472  first.py\
+\uc0\u9500 \u9472 \u9472  first.py\
+\uc0\u9500 \u9472 \u9472  
+\f0\b \cf4 for_copy
+\f1\b0 \cf3 \
+\uc0\u9474 \'a0\'a0 \u9492 \u9472 \u9472  
+\f0\b \cf4 new
+\f1\b0 \cf3 \
+\uc0\u9474 \'a0\'a0     \u9500 \u9472 \u9472  test4.txt\
+\uc0\u9474 \'a0\'a0     \u9492 \u9472 \u9472  test5.txt\
+\uc0\u9500 \u9472 \u9472  
+\f0\b \cf4 second
+\f1\b0 \cf3 \
+\uc0\u9474 \'a0\'a0 \u9492 \u9472 \u9472  second.py\
+\uc0\u9500 \u9472 \u9472  test2.txt\
+\uc0\u9500 \u9472 \u9472  test3.txt\
+\uc0\u9500 \u9472 \u9472  test4.txt\
+\uc0\u9492 \u9472 \u9472  text1.txt\
+\
+4 directories, 9 files\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ clear\
+\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ ls\
+
+\f0\b \cf4 first
+\f1\b0 \cf3   first.py  
+\f0\b \cf4 for_copy
+\f1\b0 \cf3   
+\f0\b \cf4 second
+\f1\b0 \cf3   test2.txt  test3.txt  test4.txt  text1.txt\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ echo 1>first.py\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ echo 2>second.py\
+\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ cat first.py\
+\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ echo 1 > first.py\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ cat firrs.py\
+cat: firrs.py: No such file or directory\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ cat first.py\
+1\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ echo 2 > second.py\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ cat second.py\
+2\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ mv second.py ./first/\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ ls .first\
+ls: cannot access '.first': No such file or directory\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ ls first/\
+first.py  second.py\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ rm second\
+rm: cannot remove 'second': Is a directory\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ rm second/\
+rm: cannot remove 'second/': Is a directory\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ rm -r second\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ mv first /first_second\
+mv: cannot move 'first' to '/first_second': Permission denied\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ mv first first_second\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ ls\
+first.py  
+\f0\b \cf4 first_second
+\f1\b0 \cf3   
+\f0\b \cf4 for_copy
+\f1\b0 \cf3   test2.txt  test3.txt  test4.txt  text1.txt\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ rm -r first_second\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ ls\
+first.py  
+\f0\b \cf4 for_copy
+\f1\b0 \cf3   test2.txt  test3.txt  test4.txt  text1.txt\
+
+\f0\b \cf2 ubuntu@ip-172-31-16-118
+\f1\b0 \cf3 :
+\f0\b \cf4 ~
+\f1\b0 \cf3 $ }
