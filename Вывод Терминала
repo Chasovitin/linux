@@ -1,0 +1,58 @@
+ubuntu@ip-172-31-16-118:~$ mv second.py ./second/
+ubuntu@ip-172-31-16-118:~$ ls second/
+second.py
+ubuntu@ip-172-31-16-118:~$ ls
+first  first.py  for_copy  second  test2.txt  test3.txt  test4.txt  text1.txt
+ubuntu@ip-172-31-16-118:~$ tree
+.
+├── first
+│   └── first.py
+├── first.py
+├── for_copy
+│   └── new
+│       ├── test4.txt
+│       └── test5.txt
+├── second
+│   └── second.py
+├── test2.txt
+├── test3.txt
+├── test4.txt
+└── text1.txt
+
+4 directories, 9 files
+ubuntu@ip-172-31-16-118:~$ clear
+
+ubuntu@ip-172-31-16-118:~$ ls
+first  first.py  for_copy  second  test2.txt  test3.txt  test4.txt  text1.txt
+ubuntu@ip-172-31-16-118:~$ echo 1>first.py
+ubuntu@ip-172-31-16-118:~$ echo 2>second.py
+
+ubuntu@ip-172-31-16-118:~$ cat first.py
+
+ubuntu@ip-172-31-16-118:~$ echo 1 > first.py
+ubuntu@ip-172-31-16-118:~$ cat firrs.py
+cat: firrs.py: No such file or directory
+ubuntu@ip-172-31-16-118:~$ cat first.py
+1
+ubuntu@ip-172-31-16-118:~$ echo 2 > second.py
+ubuntu@ip-172-31-16-118:~$ cat second.py
+2
+ubuntu@ip-172-31-16-118:~$ mv second.py ./first/
+ubuntu@ip-172-31-16-118:~$ ls .first
+ls: cannot access '.first': No such file or directory
+ubuntu@ip-172-31-16-118:~$ ls first/
+first.py  second.py
+ubuntu@ip-172-31-16-118:~$ rm second
+rm: cannot remove 'second': Is a directory
+ubuntu@ip-172-31-16-118:~$ rm second/
+rm: cannot remove 'second/': Is a directory
+ubuntu@ip-172-31-16-118:~$ rm -r second
+ubuntu@ip-172-31-16-118:~$ mv first /first_second
+mv: cannot move 'first' to '/first_second': Permission denied
+ubuntu@ip-172-31-16-118:~$ mv first first_second
+ubuntu@ip-172-31-16-118:~$ ls
+first.py  first_second  for_copy  test2.txt  test3.txt  test4.txt  text1.txt
+ubuntu@ip-172-31-16-118:~$ rm -r first_second
+ubuntu@ip-172-31-16-118:~$ ls
+first.py  for_copy  test2.txt  test3.txt  test4.txt  text1.txt
+ubuntu@ip-172-31-16-118:~$ 
